@@ -14,28 +14,29 @@ struct CustomListView: View {
     @State var rowContent: String
     @State var rowTint: Color
     
+   
+    
     var body: some View {
         LabeledContent {
             Text(rowContent)
                 .foregroundColor(.primary)
                 .fontWeight(.heavy)
-            Link("", destination: URL(string: "https://www.google.com")!)
+            //Link("", destination: URL(string: "https://www.google.com")!)
             
         } label: {
-            HStack{
-                ZStack {
-                    RoundedRectangle(cornerRadius: 8)
-                        .frame(width: 30, height: 30)
-                        .foregroundColor(rowTint)
-                    
-                    Image(systemName: rowImage)
-                        .foregroundColor(.white)
-                   
+                HStack{
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 8)
+                            .frame(width: 30, height: 30)
+                            .foregroundColor(rowTint)
+                        
+                        Image(systemName: rowImage)
+                            .foregroundColor(.white)
+                       
+                    }
+                    Text(rowLabel)
+                        .fontWeight(.medium)
                 }
-                Text(rowLabel)
-                    .fontWeight(.medium)
-            }
-
         }
     }
 }

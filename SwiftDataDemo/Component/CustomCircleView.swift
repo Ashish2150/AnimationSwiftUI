@@ -11,6 +11,8 @@ struct CustomCircleView: View {
     
     @State private var isAnimationGradient: Bool = false
     
+    
+    
     var body: some View {
         ZStack {
             Circle()

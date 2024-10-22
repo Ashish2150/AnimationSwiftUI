@@ -10,9 +10,13 @@ import SwiftUI
 struct CustomButtonView: View {
     
     @State var isPressed: Bool = false
-    
+
     
     var body: some View {
+        
+        //Add new circle with gradient
+        
+        
         ZStack {
             
             Circle()
