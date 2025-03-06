@@ -29,8 +29,8 @@ jobs:
       - name: Build App
         run: |
           xcodebuild clean build \
-            -workspace YourProject.xcworkspace \
-            -scheme YourSchemeName \
+            -workspace SwiftDataDemo.xcworkspace \
+            -scheme SwiftDataDemo \
             -destination "platform=iOS Simulator,name=iPhone 15,OS=latest"
 
       # - name: Run Unit Tests
