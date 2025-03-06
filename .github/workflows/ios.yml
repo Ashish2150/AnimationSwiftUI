@@ -24,12 +24,23 @@ jobs:
       # - name: Resolve Dependencies (Swift Package Manager)
       #   run: xcodebuild -resolvePackageDependencies
 
+      - name: Print Debugging Info
+        run: |
+          xcodebuild -version
+          xcode-select -p
+          xcrun simctl list devices
+          df -h  # Check disk space
+
+      - name: Clean Derived Data
+        run: rm -rf ~/Library/Developer/Xcode/DerivedData
+
+
       - name: Build App
         run: |
           xcodebuild clean build \
             -project SwiftDataDemo.xcodeproj \
             -scheme SwiftDataDemo \
-            -destination "platform=iOS Simulator,name=iPhone 14,OS=17.2"
+            -destination "platform=iOS Simulator,name=iPhone 13,OS=16.4"
 
       # - name: Run Unit Tests
       #   run: |
