@@ -12,8 +12,18 @@ jobs:
     runs-on: macos-latest
 
     steps:
+      - name: Check Ruby Version
+        run: ruby -v
+
+      - name: Install Ruby 3.0
+        run: |
+          brew install ruby
+          echo 'export PATH="/opt/homebrew/bin:$PATH"' >> ~/.zshrc
+          source ~/.zshrc
+ 
       - name: Checkout
         uses: actions/checkout@v4
+        
       - name: Set Default Scheme
         run: |
           scheme_list=$(xcodebuild -list -json | tr -d "\n")
