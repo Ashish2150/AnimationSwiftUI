@@ -3,15 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		2071FFCE2D7A34750091BA31 /* ExportOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2071FFCD2D7A346F0091BA31 /* ExportOptions.plist */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		20614D3A2CA848C0006BBC97 /* SwiftDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2071FFCD2D7A346F0091BA31 /* ExportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = ExportOptions.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		20E03ABD2CBA6448003E2911 /* Exceptions for "SwiftDataDemo" folder in "SwiftDataDemo" target */ = {
+		20E03ABD2CBA6448003E2911 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -21,14 +26,7 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		20614D3C2CA848C0006BBC97 /* SwiftDataDemo */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				20E03ABD2CBA6448003E2911 /* Exceptions for "SwiftDataDemo" folder in "SwiftDataDemo" target */,
-			);
-			path = SwiftDataDemo;
-			sourceTree = "<group>";
-		};
+		20614D3C2CA848C0006BBC97 /* SwiftDataDemo */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (20E03ABD2CBA6448003E2911 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = SwiftDataDemo; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +43,7 @@
 		20614D312CA848C0006BBC97 = {
 			isa = PBXGroup;
 			children = (
+				2071FFCD2D7A346F0091BA31 /* ExportOptions.plist */,
 				20614D3C2CA848C0006BBC97 /* SwiftDataDemo */,
 				20614D3B2CA848C0006BBC97 /* Products */,
 			);
@@ -99,6 +98,7 @@
 				};
 			};
 			buildConfigurationList = 20614D352CA848C0006BBC97 /* Build configuration list for PBXProject "SwiftDataDemo" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -107,7 +107,6 @@
 			);
 			mainGroup = 20614D312CA848C0006BBC97;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 56;
 			productRefGroup = 20614D3B2CA848C0006BBC97 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -122,6 +121,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2071FFCE2D7A34750091BA31 /* ExportOptions.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +271,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftDataDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 99QMU97Y3T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftDataDemo/Info.plist;
@@ -278,7 +279,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,6 +303,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftDataDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 99QMU97Y3T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftDataDemo/Info.plist;
@@ -309,7 +311,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
